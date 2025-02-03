@@ -222,7 +222,7 @@ class AlefBERTRootTokenizer(PreTrainedTokenizer):
             )
 
         self.ids_to_tokens = collections.OrderedDict([(ids, tok) for tok, ids in self.vocab.items()])
-        self.model_max_length = 512
+        self.model_max_length = 1024
         self.cache = dict()
         self.special_tokens = {unk_token, sep_token, pad_token, cls_token, mask_token}
 

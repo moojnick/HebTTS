@@ -108,7 +108,7 @@ def get_args():
     parser.add_argument(
         "--speaker",
         type=str,
-        default="liran",
+        default="vo_liran",
         help="A speaker from speakers.yaml",
     )
 

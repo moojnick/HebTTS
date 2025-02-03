@@ -134,7 +134,7 @@ def get_args():
     parser.add_argument(
         "--num-text-tokens",
         type=int,
-        default="512",
+        default="1024",
         help="token type",
     )
 

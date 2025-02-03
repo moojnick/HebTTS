@@ -334,8 +334,8 @@ class TtsDataModule:
             # length_before_filter = len(cuts_train.to_eager())
 
             def drop_c(c):
-                # print(c.supervisions[0].custom is not None) and (len(c.supervisions[0].custom['tokens']['char']) < 190)
-                return  len(c.supervisions[0].custom['tokens']['char']) < 200
+                # print(c.supervisions[0].custom is not None) and (len(c.supervisions[0].custom['tokens']['char']) < 19000)
+                return  len(c.supervisions[0].custom['tokens']['char']) < 20000
 
 
             cuts_train = cuts_train.filter(drop_c)
@@ -414,8 +414,8 @@ class TtsDataModule:
             # length_before_filter = len(cuts_train.to_eager())
 
             def drop_c(c):
-                # print(c.supervisions[0].custom is not None) and (len(c.supervisions[0].custom['tokens']['char']) < 190)
-                return  len(c.supervisions[0].custom['tokens']['char']) < 200
+                # print(c.supervisions[0].custom is not None) and (len(c.supervisions[0].custom['tokens']['char']) < 19000)
+                return  len(c.supervisions[0].custom['tokens']['char']) < 20000
 
 
             cuts_valid = cuts_valid.filter(drop_c)
@@ -459,8 +459,8 @@ class TtsDataModule:
             # length_before_filter = len(cuts_train.to_eager())
 
             def drop_c(c):
-                # print(c.supervisions[0].custom is not None) and (len(c.supervisions[0].custom['tokens']['char']) < 190)
-                return len(c.supervisions[0].custom['tokens']['char']) < 200
+                # print(c.supervisions[0].custom is not None) and (len(c.supervisions[0].custom['tokens']['char']) < 19000)
+                return len(c.supervisions[0].custom['tokens']['char']) < 20000
 
             cuts = cuts.filter(drop_c)
             logging.info("filtered")

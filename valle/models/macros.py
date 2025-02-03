@@ -1,5 +1,5 @@
 # Text
-NUM_TEXT_TOKENS = 512
+NUM_TEXT_TOKENS = 1024
 
 # Audio
 NUM_AUDIO_TOKENS = 1024  # EnCodec RVQ bins
